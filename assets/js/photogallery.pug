@@ -1,0 +1,28 @@
+extends assets/pug/base
+block  content
+    +headpage('/assets/img/bg.jpg', 'Галерея красивая', 'Разработана специально с учётом актуальной мировой обстановки', 'small')
+    section.section-list.section-list--gallery
+        .section-list__wrapper.wrapper
+            .section-list__content
+                ul.entry-list(data-gallery )
+                    li.entry-list__item
+                        a.entry-item(href="https://via.placeholder.com/610x415" data-gallery-item)
+                            .entry-item__image
+                                img.image(src='https://via.placeholder.com/610x415')
+                    li.entry-list__item
+                        a.entry-item(href="https://via.placeholder.com/610x415" data-gallery-item)
+                            .entry-item__image
+                                img.image(src='https://via.placeholder.com/610x415')
+                    li.entry-list__item
+                        a.entry-item(href="/assets/img/news-2.jpg" data-gallery-item)
+                            .entry-item__image
+                                img.image(src='/assets/img/news-2.jpg')
+                    li.entry-list__item
+                        a.entry-item(href="/assets/img/news-3.jpg" data-gallery-item)
+                            .entry-item__image
+                                img.image(src='/assets/img/news-3.jpg')
+                    li.entry-list__item
+                        a.entry-item(href='/assets/img/news-2.jpg' data-gallery-item)
+                            .entry-item__image
+                                img.image(src='https://via.placeholder.com/610x415')
+

@@ -6,25 +6,40 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ипотека 138</title>
+    <!--<base href="/">-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
 <header class="header">
     <div class="header__wrapper">
-        <div class="logo header__logo"><img src="assets/img/logo-menu.svg" alt="" class="logo__image"></div>
+        <div class="logo header__logo"><a href="/" class="logo__image"></a></div>
         <nav class="header__navigation">
             <ul class="navigation">
-                <li class="navigation__item"><a href="#aboutme">Обо мне</a></li>
-                <li class="navigation__item"><a href="#advantages">Преимущества</a></li>
+                <li class="navigation__item active"><a href="#about">Обо мне</a></li>
+                <!--<li class="navigation__item"><a href="#advantages">Преимущества</a></li>-->
                 <li class="navigation__item"><a href="#service">Услуги</a></li>
                 <li class="navigation__item"><a href="#review">Отзывы</a></li>
                 <li class="navigation__item"><a href="#question">Вопрос/ответ</a></li>
                 <li class="navigation__item"><a href="#contacts">Контакты</a></li>
             </ul>
+            <div class="contact">
+                <div class="contact__phone">
+                    <a href="tel:+79648245454" class="contact__link"><span class="icon material-symbols-outlined">call</span> +7 964 824-54-54</a>
+                </div>
+            </div>
+            <ul class="list-social">
+                <li class="item item--whatsapp"><a href="https://wa.me/79648245454"><img src="assets/img/whatsapp.svg" alt="whatsapp"></a></li>
+                <li class="item item--telegram"><a href="https://t.me/ipoteka_138"><img src="assets/img/telegram.svg" alt="telegram"></a></li>
+                <li class="item item--viber"><a href="viber://chat?number=%2B79648245454"><img src="assets/img/viber.svg" alt="viber"></a></li>
+                <li class="item item--instagram"><a href="https://www.instagram.com/ipoteka_138"><img src="assets/img/instagram.svg" alt="instagram"></a></li>
+            </ul>
         </nav>
         <div class="header__actions">
             <a href="#" class="btn">Заказать услугу</a>
         </div>
-        <div class="header__mobile-menu"></div>
+        <div class="header__mobile-menu header-switch"></div>
     </div>
 </header>
 
@@ -35,21 +50,28 @@
                 <div class="about__img">
                     <img src="assets/img/about.png" alt="">
                 </div>
-                <div class="about__content"></div>
-            </div>
-        </div>
-        <div class="mission">
-            <div class="mission__wrapper">
-                <div class="mission__entry">
-                    <div class="mission__img">
-                        <img src="assets/img/mission.svg" alt="">
-                    </div>
-                    <div class="mission__content"></div>
+                <div class="about__content">
+                    Здравствуйте, меня зовут <strong>Анастасия Шибанова</strong>, и я ипотечный брокер! Мой опыт работы в банковской сфере и сфере ипотечного брокериджа позволяет мне профессионально оценивать возможности заемщиков, разрабатывать для них индивидуальные стратегии и подбирать выгодные кредитные продукты в короткие сроки.
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+
+<section class="section section--about" id="mission">
+    <div class="section__wrapper">
+        <div class="mission">
+            <div class="mission__wrapper">
+                <div class="mission__img">
+                    <img src="assets/img/mission.svg" alt="">
+                </div>
+                <div class="mission__content">Мой опыт работы в банковской сфере и сфере ипотечного брокериджа позволяет мне профессионально оценивать возможности заемщиков, разрабатывать для них индивидуальные стратегии и подбирать выгодные кредитные продукты в короткие сроки.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 
 <section class="section section--advantages" id="advantages">
@@ -59,25 +81,27 @@
                 <ul class="advantages__list">
                     <li class="advantages__item">
                         <div class="advantages__item-wrapper">
-                            <div class="advantages__icon"></div>
+                            <div class="advantages__icon">
+                                <span class="icon material-symbols-outlined">trending_up</span>
+                            </div>
                             <div class="advantages__content">Непрерывный проффесиональный рост и сложные кейсы</div>
                         </div>
                     </li>
                     <li class="advantages__item">
                         <div class="advantages__item-wrapper">
-                            <div class="advantages__icon"></div>
+                            <div class="advantages__icon"><span class="icon material-symbols-outlined">groups</span></div>
                             <div class="advantages__content">Множество довольных клиентов</div>
                         </div>
                     </li>
                     <li class="advantages__item">
                         <div class="advantages__item-wrapper">
-                            <div class="advantages__icon"></div>
+                            <div class="advantages__icon"><span class="icon material-symbols-outlined">diversity_3</span></div>
                             <div class="advantages__content">Команда профессионалов которым я доверяю</div>
                         </div>
                     </li>
                     <li class="advantages__item">
                         <div class="advantages__item-wrapper">
-                            <div class="advantages__icon"></div>
+                            <div class="advantages__icon"><span class="icon material-symbols-outlined">business_center</span></div>
                             <div class="advantages__content">Уникальный подход к каждому клиенту</div>
                         </div>
                     </li>
@@ -90,7 +114,7 @@
 
 <section class="section section--service" id="service">
     <div class="section__wrapper">
-        <div class="section__head">
+        <div class="section__head section-head">
             <div class="section-head__title">Услуги</div>
             <div class="section-head__description">Не нашли нужную услугу или не знаете какую выбрать? Свяжитесь со мной и я подберу для вас подходящую услугу!</div>
         </div>
@@ -98,60 +122,60 @@
             <div class="service__wrapper">
                 <ul class="service__list">
                     <li class="service__item">
-                        <div class="service__wrapper">
-                            <div class="service__image"><span class="icon">supervised_user_circle</span></div>
+                        <a class="service__item-wrapper" data-request-title="Консультация" data-request-target="@popup" data-request-source=".service-entry" href="modal-service-consult.html">
+                            <div class="service__image"><span class="icon material-symbols-outlined">supervised_user_circle</span></div>
                             <div class="service__caption">Консультация</div>
-                            <div class="service__action"><a href="">Подробнее</a></div>
-                        </div>
+                            <div class="service__action">Подробнее</div>
+                        </a>
                     </li>
                     <li class="service__item">
-                        <div class="service__wrapper">
-                            <div class="service__image"><span class="icon">article</span></div>
+                        <a class="service__item-wrapper">
+                            <div class="service__image"><span class="icon material-symbols-outlined">article</span></div>
                             <div class="service__caption">Сделка стандарт</div>
-                            <div class="service__action"><a href="">Подробнее</a></div>
-                        </div>
+                            <div class="service__action">Подробнее</div>
+                        </a>
                     </li>
                     <li class="service__item">
-                        <div class="service__wrapper">
-                            <div class="service__image"><span class="icon">workspace_premium</span></div>
+                        <a class="service__item-wrapper">
+                            <div class="service__image"><span class="icon material-symbols-outlined">workspace_premium</span></div>
                             <div class="service__caption">Сделка Премиум</div>
-                            <div class="service__action"><a href="">Подробнее</a></div>
-                        </div>
+                            <div class="service__action">Подробнее</div>
+                        </a>
                     </li>
                     <li class="service__item">
-                        <div class="service__wrapper">
-                            <div class="service__image"><span class="icon">query_stats</span></div>
+                        <a class="service__item-wrapper">
+                            <div class="service__image"><span class="icon material-symbols-outlined">query_stats</span></div>
                             <div class="service__caption">Комплекс услуг по снижению финансовой нагрузки</div>
-                            <div class="service__action"><a href="">Подробнее</a></div>
-                        </div>
+                            <div class="service__action">Подробнее</div>
+                        </a>
                     </li>
                     <li class="service__item">
-                        <div class="service__wrapper">
-                            <div class="service__image"><span class="icon">clinical_notes</span></div>
+                        <a class="service__item-wrapper">
+                            <div class="service__image"><span class="icon material-symbols-outlined">clinical_notes</span></div>
                             <div class="service__caption">Сопровождение покупки недвижимости без подбора объекта</div>
-                            <div class="service__action"><a href="">Подробнее</a></div>
-                        </div>
+                            <div class="service__action">Подробнее</div>
+                        </a>
                     </li>
                     <li class="service__item">
-                        <div class="service__wrapper">
-                            <div class="service__image"><span class="icon">shield_with_house</span></div>
+                        <a class="service__item-wrapper">
+                            <div class="service__image"><span class="icon material-symbols-outlined">shield_with_house</span></div>
                             <div class="service__caption">Подбор недвижимости и сопровождение покупки в ипотеку</div>
-                            <div class="service__action"><a href="">Подробнее</a></div>
-                        </div>
+                            <div class="service__action">Подробнее</div>
+                        </a>
                     </li>
                     <li class="service__item">
-                        <div class="service__wrapper">
-                            <div class="service__image"><span class="icon">cottage</span></div>
+                        <a class="service__item-wrapper">
+                            <div class="service__image"><span class="icon material-symbols-outlined">cottage</span></div>
                             <div class="service__caption">Строительство Дома</div>
-                            <div class="service__action"><a href="">Подробнее</a></div>
-                        </div>
+                            <div class="service__action">Подробнее</div>
+                        </a>
                     </li>
                     <li class="service__item">
-                        <div class="service__wrapper">
-                            <div class="service__image"><span class="icon">source_environment</span></div>
+                        <a class="service__item-wrapper">
+                            <div class="service__image"><span class="icon material-symbols-outlined">source_environment</span></div>
                             <div class="service__caption">Кредитование бизнеса</div>
-                            <div class="service__action"><a href="">Подробнее</a></div>
-                        </div>
+                            <div class="service__action">Подробнее</div>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -162,31 +186,113 @@
 
 <section class="section section--review" id="review">
     <div class="section__wrapper">
-        <div class="section__head">
+        <div class="section__head section-head">
             <div class="section-head__title">Отзывы</div>
             <div class="section-head__description">Реальные отзывы от реальных клиентов, больше отзывов в моем инстаграм аккаунте <a href="#">@ipoteka_138</a></div>
+        </div>
+        <div class="review">
+            <div class="review__wrapper">
+                <ul class="review__list" data-gallery>
+                    <li class="review__item">
+                        <a class="review__item-wrapper" href="assets/img/review/review-1.png" data-gallery-item>
+                            <img src="assets/img/review/review-1.png" alt="" data-text="" class="review__image">
+                        </a>
+                    </li>
+                    <li class="review__item">
+                        <a class="review__item-wrapper" href="assets/img/review/review-2.png" data-gallery-item>
+                            <img src="assets/img/review/review-2.png" alt="" data-text="" class="review__image">
+                        </a>
+                    </li>
+                    <li class="review__item">
+                        <a class="review__item-wrapper" href="assets/img/review/review-3.png" data-gallery-item>
+                            <img src="assets/img/review/review-3.png" alt="" data-text="" class="review__image">
+                        </a>
+                    </li>
+                    <li class="review__item">
+                        <a class="review__item-wrapper" href="assets/img/review/review-4.png" data-gallery-item>
+                            <img src="assets/img/review/review-4.png" alt="" data-text="" class="review__image">
+                        </a>
+                    </li>
+                    <li class="review__item">
+                        <a class="review__item-wrapper" href="assets/img/review/review-5.png" data-gallery-item>
+                            <img src="assets/img/review/review-5.png" alt="" data-text="" class="review__image">
+                        </a>
+                    </li>
+                    <li class="review__item">
+                        <a class="review__item-wrapper" href="assets/img/review/review-6.png" data-gallery-item>
+                            <img src="assets/img/review/review-6.png" alt="" data-text="" class="review__image">
+                        </a>
+                    </li>
+                    <li class="review__item">
+                        <a class="review__item-wrapper" href="assets/img/review/review-7.png" data-gallery-item>
+                            <img src="assets/img/review/review-7.png" alt="" data-text="" class="review__image">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section__footer">
+            <div class="actions">
+                <a class="btn btn-primary" href="#">Больше отзывов</a>
+            </div>
         </div>
     </div>
 </section>
 
 <section class="section section--sert">
     <div class="section__wrapper">
-        <div class="section__head">
+        <div class="section__head section-head">
             <div class="section-head__title">Сертификаты</div>
+        </div>
+         <div class="review">
+            <div class="review__wrapper">
+                <ul class="review__list" data-gallery>
+                    <li class="review__item">
+                        <a class="review__item-wrapper" href="assets/img/cert/cert-1-mini.jpg" data-gallery-item>
+                            <img src="assets/img/cert/cert-1-mini.jpg" alt="" data-text="" class="review__image">
+                        </a>
+                    </li>
+                    <li class="review__item">
+                        <a class="review__item-wrapper" href="assets/img/cert/cert-2-mini.jpg" data-gallery-item>
+                            <img src="assets/img/cert/cert-2-mini.jpg" alt="" data-text="" class="review__image">
+                        </a>
+                    </li>
+                    <li class="review__item">
+                        <a class="review__item-wrapper" href="assets/img/cert/cert-3-mini.jpg" data-gallery-item>
+                            <img src="assets/img/cert/cert-3-mini.jpg" alt="" data-text="" class="review__image">
+                        </a>
+                    </li>
+                    <li class="review__item">
+                        <a class="review__item-wrapper" href="assets/img/cert/cert-4-mini.jpg" data-gallery-item>
+                            <img src="assets/img/cert/cert-4-mini.jpg" alt="" data-text="" class="review__image">
+                        </a>
+                    </li>
+                    <li class="review__item">
+                        <a class="review__item-wrapper" href="assets/img/cert/cert-5-mini.jpg" data-gallery-item>
+                            <img src="assets/img/cert/cert-5-mini.jpg" alt="" data-text="" class="review__image">
+                        </a>
+                    </li>
+                    <li class="review__item">
+                        <a class="review__item-wrapper" href="assets/img/cert/cert-6-mini.jpg" data-gallery-item>
+                            <img src="assets/img/cert/cert-6-mini.jpg" alt="" data-text="" class="review__image">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </section>
 
 <section class="section section--question" id="question">
     <div class="section__wrapper">
-        <div class="section__head">
+        <div class="section__head section-head">
             <div class="section-head__title">Вопрос-ответ:</div>
             <div class="section-head__description">Остались вопросы напишите мне и я отвечу на них!</div>
         </div>
         <div class="question">
             <div class="question__wrapper">
                 <ul class="question__list">
-                    <li class="question__item">
+                    <li class="question__item open">
                         <div class="question__entry">
                             <div class="more icon"></div>
                             <div class="caption">Какой самый необычный объект недвижимости вы когда-либо продавали?</div>
@@ -231,23 +337,34 @@
                 </ul>
             </div>
         </div>
+        <div class="section__footer">
+            <div class="actions">
+                <a class="btn btn-outline" href="#">Задать вопрос</a>
+            </div>
+        </div>
     </div>
 </section>
 
 
 <section class="section section--contacts" id="contacts">
     <div class="section__wrapper">
-        <div class="section__head">
+        <div class="section__head section-head">
             <div class="section-head__title">Как нас найти?</div>
         </div>
         <div class="contacts">
-            <div class="contacts__map" id="map"></div>
-            <div class="contacts__body">
-                <div class="contacts__wrapper">
+            <div class="contacts__wrapper">
+                <div class="contacts__map" id="map"></div>
+                <div class="contacts__body">
                     <ul class="list">
-                        <li class="item"><a href="tel:+79648245454">+7 964 824-54-54</a></li>
-                        <li class="item"><address>г. Иркутск, ул. Пискунова, 148/4</address></li>
-                        <li class="item"><a href="mailto:+79648245454">ipoteka_138@bk.ru</a></li>
+                        <li class="item item--phone"><span class="icon material-symbols-outlined">call</span><a href="tel:+79648245454">+7 964 824-54-54</a></li>
+                        <li class="item item--address"><span class="icon material-symbols-outlined">location_on</span><address>г. Иркутск, ул. Пискунова, 148/4</address></li>
+                        <li class="item item--email"><span class="icon material-symbols-outlined">mail_outline</span><a href="mailto:+79648245454">ipoteka_138@bk.ru</a></li>
+                    </ul>
+                    <ul class="list-social">
+                        <li class="item item--whatsapp"><a href="https://wa.me/79648245454"><img src="assets/img/whatsapp.svg" alt="whatsapp"></a></li>
+                        <li class="item item--telegram"><a href="https://t.me/ipoteka_138"><img src="assets/img/telegram.svg" alt="telegram"></a></li>
+                        <li class="item item--viber"><a href="viber://chat?number=%2B79648245454"><img src="assets/img/viber.svg" alt="viber"></a></li>
+                        <li class="item item--instagram"><a href="https://www.instagram.com/ipoteka_138"><img src="assets/img/instagram.svg" alt="instagram"></a></li>
                     </ul>
                 </div>
             </div>
@@ -255,5 +372,14 @@
     </div>
 </section>
 
+
+  <script type="text/javascript" charset="UTF-8" src="/assets/js/jquery.min.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="/assets/js/chosen.jquery.min.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="/assets/js/jquery.magnific-popup.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="/assets/js/jquery.maskedinput.js"></script>
+  <!--<script type="text/javascript" charset="UTF-8" src="/assets/js/jquery.slick.min.js"></script>-->
+  <!--<script type="text/javascript" charset="UTF-8" src="/assets/js/swiper.min.js"></script>-->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="/assets/js/main.js"></script>
 </body>
 </html>
