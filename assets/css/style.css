@@ -198,6 +198,13 @@ a {
   color: #24353F;
 }
 
+p:first-child {
+  margin-top: 0;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+
 html, body {
   background-color: #D1E5E6;
   color: #24353F;
@@ -2293,6 +2300,20 @@ button.swiper-pagination-bullet {
 }
 .question__item.open .more.icon::before {
   transform: rotate(90deg);
+}
+.question__item .description ul {
+  padding-left: 20px;
+}
+.question__item .description ul li {
+  list-style-type: disc;
+  margin-bottom: 10px;
+}
+.question__item .description blockquote {
+  padding: 10px 20px;
+  color: #e8f2f3;
+  border-radius: 0 20px 20px 0;
+  background: linear-gradient(to right, rgba(36, 53, 63, 0.3) 0%, #24353f 100%);
+  margin: 20px 0;
 }
 
 .contacts {

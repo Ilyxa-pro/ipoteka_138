@@ -78,7 +78,14 @@ a {
     }
   }
 }
-
+p {
+  &:first-child {
+    margin-top: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
 
 html, body {
   background-color: $mainBG;
@@ -752,6 +759,22 @@ body {
       }
       .more.icon::before {
         transform: rotate(90deg);
+      }
+    }
+    .description {
+      ul {
+        padding-left: 20px;
+        li {
+          list-style-type: disc;
+          margin-bottom: 10px;
+        }
+      }
+      blockquote {
+        padding: 10px 20px;
+        color: #e8f2f3;
+        border-radius: 0 20px 20px 0;
+        background: linear-gradient(to right, rgb(36 53 63 / 30%) 0%, #24353f 100%);
+        margin: 20px 0;
       }
     }
   }
